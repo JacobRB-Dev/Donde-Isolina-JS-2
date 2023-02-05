@@ -1,41 +1,35 @@
-/* Incluir en la entrega:
-    Variables JS
-    Funciones segun proceso a simular
-    Objetos JS
-    Arrays
-    Metodos de busqueda y filtrado sobre el Array */
 
-    //Variables JS
-    let producto = prompt(`Ingrese el producto`)
-    console.log(producto)
-    let addProduct = parseInt(prompt(`añadir cantidad del producto`))
-    console.log(`La cantidad añadida de ${producto} es ${addProduct}`)
-    if (addProduct >= 1) {
-        console.log(`Cantidad de ${producto} disponible, puede continuar con la compra`)
-    } else {
-        console.log(`Sin stock de ${producto}`)
+// Variables Js
+// Funciones
+    function car() {
+        const iva = 1.19;
+        let producto = prompt(`Ingresa el producto que deseas`);
+        let precio;
+        precio = parseInt(prompt(`Indicanos el precio del producto`));
+        let precioIva = precio * iva;
+        let cantidad = parseInt(prompt(`¿Cuantos ${producto} desea llevar?`))
+        let productoCar = prompt(`El producto ${producto} tiene un precio de ${precio} y con el iva es ${precioIva}`) 
+        let cantidadPrecio = precioIva * cantidad   
+        let totalCar = prompt(`El total de los productos mas iva es ${cantidadPrecio} `) 
+
     }
 
-    //Funciones
+    let nombre = prompt(`¿Cual es tu Nombre?`)
 
-    //Objetos
+    saludo (nombre)
+    car ()
 
-    //Arrays
+    function saludo (nombre) { 
+        prompt(`Bienvenido a Donde Isolina ${nombre}`)
+    }
+// Objetos
+    const productos = {
+        nombre: "Cerveza Escudo",
+        precio: 0,
+        cantidad: 0
+    }
 
-
-
-
-
-    // function addCar(){
-    //     //instrucciones a ejecutar cuando llamemos esta funcion
-    //     let addProduct = parseInt(prompt("añadir cantidad de producto"))
-    //     console.log(`La cantidad añadida es ${addProduct}`)
-    // }
-
-    // function producto(){
-    //     let productoIngresado = prompt("Ingrese el producto")
-    //     console.log(`Buscando disponibilidad de ${productoIngresado}`)
-    //     addCar()
-    // }
-
-    // producto()
+    productos.precio = precio
+    productos.cantidad = cantidad
+    console.log(productos)
+// Arrays y metodos de busqueda y filtrado...

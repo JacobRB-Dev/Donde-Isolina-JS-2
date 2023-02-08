@@ -14,14 +14,14 @@
 
     // }
 
-    // let nombre = prompt(`¿Cual es tu Nombre?`)
+    let nombre = prompt(`¿Cual es tu Nombre?`)
 
-    // saludo (nombre)
+    saludo (nombre)
     // car ()
 
-    // function saludo (nombre) { 
-    //     prompt(`Bienvenido a Donde Isolina ${nombre}`)
-    // }
+    function saludo (nombre) { 
+        prompt(`Bienvenido a Donde Isolina ${nombre}`)
+    }
 // Objetos
 
 // Arrays y metodos de busqueda y filtrado...
@@ -89,5 +89,3 @@ while(select != "no"){
         break;
     }
 }
-
-
